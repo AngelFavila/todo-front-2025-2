@@ -75,7 +75,7 @@ services:
         condition: service_healthy
     restart: unless-stopped
   todo-back-app:
-    image: todo-back-app-2025
+    image: todo-back-app:lastest
     container_name: todo-back-app
     environment:
         # Configuración de base de datos
