@@ -9,7 +9,7 @@ services:
         VITE_KEYCLOAK_URL: 'https://h2px6z2s-8081.usw3.devtunnels.ms/'
         VITE_KEYCLOAK_REALM: 'apps_web'
         VITE_KEYCLOAK_CLIENT_ID: 'user'
-        VITE_API_BASE_URL: 'https://h2px6z2s-8080.usw3.devtunnels.ms/'
+        VITE_API_BASE_URL: 'https://h2px6z2s-8080.usw3.devtunnels.ms/api/v1'
     ports:
       - "8083:80"
     restart: unless-stopped
@@ -59,7 +59,7 @@ services:
       KC_DB_URL_DATABASE: todo_db_v2
       #KC_DB_SCHEMA: keycloak
       # Configuración del túnel público
-      KC_HOSTNAME: h2px6z2s-8081.usw3.devtunnels.ms
+      KC_HOSTNAME: https://h2px6z2s-8081.usw3.devtunnels.ms
       KC_HOSTNAME_STRICT: 'false'
       KC_HTTP_ENABLED: 'true'
       KC_PROXY: edge
